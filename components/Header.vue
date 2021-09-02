@@ -10,7 +10,7 @@
         >
           <nuxt-link
             :to="navLink.href"
-            active-class="text-lime"
+            exact-active-class="text-lime"
             class="text-gray-300"
           >
             <HeaderIcon :icon-name="navLink.icon" />
@@ -27,7 +27,7 @@
       >
         <nuxt-link
           :to="navLink.href"
-          active-class="text-white border-b border-lime"
+          exact-active-class="text-white border-b border-lime"
           class="text-gray-300 text-montserrat tracking-wide font-thin px-1 py-2 uppercase hover:text-white border-b border-transparent hover:border-lime transition ease-in-out duration-150"
         >
           {{ navLink.name }}
