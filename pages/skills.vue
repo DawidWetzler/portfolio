@@ -9,7 +9,7 @@
         <span class="text-base md:text-xl tracking-tight text-montserrat text-white">{{ skill.title }}</span>
         <ul
           v-if="skill.skills.length >= 1"
-          class="list-disc"
+          class="list-disc mt-1"
         >
           <li
             v-for="skill in skill.skills"
