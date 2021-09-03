@@ -3,3 +3,8 @@ interface NavLink {
   name: string;
   icon: string;
 }
+
+interface Skill {
+  title: string;
+  skills: string[];
+}
