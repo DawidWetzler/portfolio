@@ -1,12 +1,12 @@
 <template>
-  <main class="row-start-2 flex justify-center items-center max-w-7xl w-full mx-auto">
+  <main class="flex-1 flex justify-center items-center max-w-7xl w-full mx-auto">
     <ul class="grid grid-cols-2 md:grid-cols-3 grid-rows-2 gap-2">
       <li
         v-for="skill in skills"
         :key="`skills-${skill.title}`"
         class="text-white bg-gray-800 shadow px-4 py-2 rounded-lg"
       >
-        <span class="text-base md:text-xl tracking-tight text-montserrat text-white ">{{ skill.title }}</span>
+        <span class="text-base md:text-xl tracking-tight text-montserrat text-white">{{ skill.title }}</span>
         <ul
           v-if="skill.skills.length >= 1"
           class="list-disc"

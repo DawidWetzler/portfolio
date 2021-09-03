@@ -1,5 +1,5 @@
 <template>
-  <main class="row-start-2 flex justify-center items-center max-w-7xl w-full mx-auto">
+  <main class="flex-1 flex justify-center items-center max-w-7xl w-full mx-auto">
     <div class="relative z-10 flex flex-col md:flex-row items-center w-full">
 
       <div

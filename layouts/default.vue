@@ -1,5 +1,5 @@
 <template>
-  <div class="background grid grid-rows-3 bg-gray-900 px-4 md:px-8">
+  <div class="background flex justify-end flex-col-reverse md:flex-col bg-gray-900 px-4 md:px-8">
     <Header />
     <Nuxt />
     <Footer />
@@ -16,7 +16,7 @@ import Footer from '~/components/Footer.vue';
 })
 export default class Default extends Vue {
   created(): void {
-    if(!process.client) {
+    if (!process.client) {
       return;
     }
 

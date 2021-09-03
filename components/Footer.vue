@@ -1,6 +1,6 @@
 <template>
-  <footer class="row-start-1 md:row-start-3 flex justify-center md:justify-start md:items-end max-w-7xl w-full mx-auto">
-    <div class="mt-8 md:mt-0 md:mb-20">
+  <footer class="flex justify-center md:justify-start md:items-end max-w-7xl w-full mx-auto">
+    <div class="mt-8 md:mt-0">
       <a
         v-for="(contactLink, index) in contactLinks"
         :key="`contact-${contactLink.name}`"

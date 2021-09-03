@@ -5,8 +5,8 @@
 .background {
   @apply bg-gray-900 bg-cover;
   background-image: url('~/assets/images/background.svg');
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  min-height: calc(var(--vh, 1vh) * 100);
 }
 
 .animate-wink {

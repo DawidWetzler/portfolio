@@ -1,5 +1,5 @@
 <template>
-  <main class="row-start-2 flex justify-center items-center max-w-3xl w-full mx-auto">
+  <main class="flex-1 flex justify-center items-center max-w-3xl w-full mx-auto">
 
     <div class="w-full bg-gray-900 shadow rounded-lg">
       <div class="min-h-full bg-gray-800 bg-opacity-60 rounded-lg p-4 space-y-1">

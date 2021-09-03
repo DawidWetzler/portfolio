@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed bottom-8 inset-x-0 md:static md:h-20 md:max-w-7xl md:w-full mx-auto md:px-4 md:py-6">
+  <nav class="h-16 mt-8 md:h-20 md:max-w-7xl md:w-full mx-auto md:px-4 md:py-6">
 
     <div class="bg-gray-800 bg-opacity-40 py-2 w-52 mx-auto rounded-full md:hidden">
       <ul class="flex justify-center space-x-6">
