@@ -6,7 +6,7 @@
         :key="`skills-${skill.title}`"
         class="text-white bg-gray-800 shadow px-4 py-2 rounded-lg"
       >
-        <span class="text-base md:text-xl tracking-tight text-montserrat">{{ skill.title }}</span>
+        <span class="text-base md:text-xl tracking-tight text-gray-300 text-montserrat">{{ skill.title }}</span>
         <ul
           v-if="skill.skills.length >= 1"
           class="list-disc"
@@ -14,7 +14,7 @@
           <li
             v-for="skill in skill.skills"
             :key="`skill-${skill}`"
-            class="text-sm md:text-base ml-5 text-white"
+            class="text-sm md:text-base ml-5 text-gray-300"
           >
             {{ skill }}
           </li>
