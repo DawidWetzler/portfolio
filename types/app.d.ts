@@ -8,3 +8,10 @@ interface Skill {
   title: string;
   skills: string[];
 }
+
+interface Project {
+  title: string;
+  description: string;
+  href?: string,
+  src?: string;
+}
