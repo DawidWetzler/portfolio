@@ -15,10 +15,9 @@ import Footer from '~/components/Footer.vue';
   components: { Header, Footer }
 })
 export default class Default extends Vue {
-  created(): void {
-    if (!process.client) {
-      return;
-    }
+  mounted(): void {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 
     window.addEventListener('resize', () => {
       const vh = window.innerHeight * 0.01;
