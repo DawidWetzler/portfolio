@@ -1,7 +1,6 @@
 <template>
   <nav class="h-16 mt-8 md:h-20 md:max-w-7xl md:w-full mx-auto md:px-4 md:py-6">
-
-    <div class="fixed bottom-8 inset-x-0 bg-gray-900 bg-opacity-95 py-2 w-52 mx-auto rounded-full md:hidden">
+    <div class="fixed z-50 bottom-8 inset-x-0 bg-gray-900 bg-opacity-95 py-2 w-52 mx-auto rounded-full md:hidden">
       <ul class="flex justify-center space-x-6">
         <li
           v-for="navLink in navLinks"

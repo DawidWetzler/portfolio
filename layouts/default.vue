@@ -1,7 +1,9 @@
 <template>
   <div class="background flex justify-end flex-col-reverse md:flex-col bg-gray-900 px-4 md:px-8">
     <Header />
-    <Nuxt />
+    <main class="flex-1 flex justify-center items-center max-w-7xl w-full mx-auto">
+      <Nuxt />
+    </main>
     <Footer />
   </div>
 </template>
