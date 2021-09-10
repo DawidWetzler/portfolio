@@ -83,10 +83,9 @@ export default class Gallery extends Vue {
   get projects(): Project[] {
     return [
       {
-        title: 'printcolours',
-        description: 'Website for a company dealing with press machines and more..',
-        year: this.getTillCurrentYear(2021),
-        href: 'https://printcolours.pl',
+        title: 'Stay tuned',
+        description: 'This project is still in active development phase and will be available soon...',
+        href: '#',
       },
       {
         title: 'firespot',

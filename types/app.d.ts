@@ -12,7 +12,7 @@ interface Skill {
 interface Project {
   title: string;
   description: string;
-  year: string;
+  year?: string;
   href?: string,
   src?: string;
 }
