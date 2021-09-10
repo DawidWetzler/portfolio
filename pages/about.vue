@@ -83,5 +83,20 @@ import { Vue, Component } from 'nuxt-property-decorator';
 
 @Component
 export default class About extends Vue {
+
+  head(): Record<string, string | Array<Record<string, string>>> {
+
+    return {
+      title: 'About - Dawid wecler Wetzler',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'A few words to introduce myself.'
+        },
+      ]
+    };
+  }
+
 }
 </script>

@@ -54,6 +54,12 @@ export default class index extends Vue {
 
   private waveTimer = 1000; // in milliseconds
 
+  head(): Record<string, string> {
+    return {
+      title: 'Welcome - Dawid wecler Wetzler'
+    };
+  }
+
   runWaveTimer(): void {
     if (this.waveTimer <= 0) {
       return;

@@ -61,5 +61,19 @@ export default class Skills extends Vue {
       },
     ];
   }
+
+  head(): Record<string, string | Array<Record<string, string>>> {
+
+    return {
+      title: 'Skills - Dawid wecler Wetzler',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Some of my current web development skills.',
+        },
+      ]
+    };
+  }
 }
 </script>

@@ -78,7 +78,6 @@ import { Vue, Component } from 'nuxt-property-decorator';
 
 @Component
 export default class Gallery extends Vue {
-
   private isLoading: Record<string, boolean> = {};
 
   get projects(): Project[] {
@@ -97,6 +96,20 @@ export default class Gallery extends Vue {
         src: require('~/assets/images/firespot.jpg'),
       },
     ];
+  }
+
+  head(): Record<string, string | Array<Record<string, string>>> {
+
+    return {
+      title: 'Gallery - Dawid wecler Wetzler',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Projects that I have made and that are publicly available.'
+        },
+      ]
+    };
   }
 
   getTillCurrentYear(fromYear: number): string {
