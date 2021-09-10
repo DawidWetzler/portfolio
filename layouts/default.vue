@@ -23,7 +23,7 @@ export default class Default extends Vue {
     const pageDescription = 'Web developer, sometimes a designer based in Germany.';
 
     return {
-      title: 'Dawdi wecler Wetzler',
+      title: pageTitle,
       meta: [
         {
           hid: 'og:title',
