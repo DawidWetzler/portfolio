@@ -54,9 +54,33 @@ export default class index extends Vue {
 
   private waveTimer = 1000; // in milliseconds
 
-  head(): Record<string, string> {
+  head(): Record<string, string | Array<Record<string, string>>> {
+    const pageTitle = 'Welcome - Dawid wecler Wetzler';
+
     return {
-      title: 'Welcome - Dawid wecler Wetzler'
+      title: pageTitle,
+      meta: [
+        {
+          hid: 'og:title',
+          name:'og:title',
+          content: pageTitle,
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: pageTitle,
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: `https://www.wecler.me${this.$route.fullPath}`,
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: `https://www.wecler.me${this.$route.fullPath}`,
+        },
+      ]
     };
   }
 

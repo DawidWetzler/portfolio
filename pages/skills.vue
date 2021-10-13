@@ -63,14 +63,35 @@ export default class Skills extends Vue {
   }
 
   head(): Record<string, string | Array<Record<string, string>>> {
+    const pageTitle = 'Skills - Dawid wecler Wetzler';
 
     return {
-      title: 'Skills - Dawid wecler Wetzler',
+      title: pageTitle,
       meta: [
+        {
+          hid: 'og:title',
+          name:'og:title',
+          content: pageTitle,
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: pageTitle,
+        },
         {
           hid: 'description',
           name: 'description',
           content: 'Some of my current web development skills.',
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: `https://www.wecler.me${this.$route.fullPath}`,
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: `https://www.wecler.me${this.$route.fullPath}`,
         },
       ]
     };

@@ -98,14 +98,35 @@ export default class Gallery extends Vue {
   }
 
   head(): Record<string, string | Array<Record<string, string>>> {
+    const pageTitle = 'Gallery - Dawid wecler Wetzler';
 
     return {
-      title: 'Gallery - Dawid wecler Wetzler',
+      title: pageTitle,
       meta: [
+        {
+          hid: 'og:title',
+          name:'og:title',
+          content: pageTitle,
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: pageTitle,
+        },
         {
           hid: 'description',
           name: 'description',
           content: 'Projects that I have made and that are publicly available.'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: `https://www.wecler.me${this.$route.fullPath}`,
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: `https://www.wecler.me${this.$route.fullPath}`,
         },
       ]
     };

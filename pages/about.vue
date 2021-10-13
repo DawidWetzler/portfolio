@@ -86,13 +86,35 @@ export default class About extends Vue {
 
   head(): Record<string, string | Array<Record<string, string>>> {
 
+    const pageTitle = 'About - Dawid wecler Wetzler';
+
     return {
-      title: 'About - Dawid wecler Wetzler',
+      title: pageTitle,
       meta: [
+        {
+          hid: 'og:title',
+          name:'og:title',
+          content: pageTitle,
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: pageTitle,
+        },
         {
           hid: 'description',
           name: 'description',
           content: 'A few words to introduce myself.'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: `https://www.wecler.me${this.$route.fullPath}`,
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: `https://www.wecler.me${this.$route.fullPath}`,
         },
       ]
     };
