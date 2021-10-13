@@ -18,13 +18,16 @@ import Footer from '~/components/Footer.vue';
 })
 export default class Default extends Vue {
   mounted(): void {
+    this.adjustSiteHeight();
+    window.addEventListener('resize', this.adjustSiteHeight);
+  }
+
+  /**
+   * This fixes an mobile sizing problem where the navigation bar height is being ignored
+   */
+  adjustSiteHeight(): void {
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-    window.addEventListener('resize', () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
   }
 }
 </script>
